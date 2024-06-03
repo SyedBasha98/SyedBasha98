@@ -1,0 +1,24 @@
+/* HomeMyCard.css */
+.card {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.card:hover{
+    background-color: #ddd;
+    color: #000;
+}
+
+.card h1 {
+    font-family: 'Georgia', serif;
+    color: #333;
+}
+
+.card p {
+    font-family: 'Verdana', sans-serif;
+    color: #666;
+    line-height: 1.6;
+}

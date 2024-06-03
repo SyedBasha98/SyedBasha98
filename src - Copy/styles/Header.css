@@ -1,0 +1,117 @@
+/* Header.css */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.text-container {
+  text-align: left;
+}
+
+.heading {
+  margin: 0;
+  font-size: 24px;
+}
+
+.role {
+  margin: 0;
+  font-size: 8px;
+  color: #ccc;
+}
+
+.menu {
+  display: none;
+  width: 100%;
+}
+
+.menu.open {
+  display: block;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.menu ul li {
+  margin: 5px 0;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.menu ul li a:hover {
+  text-decoration: underline;
+}
+
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-end;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .logo-container {
+    margin-bottom: 0;
+    margin: 8px;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu ul {
+    display: flex;
+  }
+
+  .menu ul li {
+    margin: 0 10px;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
